@@ -1,0 +1,4 @@
+http://ddragon.leagueoflegends.com/cdn/5.22.1/data/en_US/champion.json
+https://developer.riotgames.com/docs/static-data#realms
+http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/
+http://dimsemenov.com/plugins/magnific-popup/
