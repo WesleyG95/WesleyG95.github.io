@@ -1,7 +1,7 @@
 var totalCorrect = 0;
 var gradePercent = 0;
 var letterGrade = "";
-var correctAnswers = ["Gill", "No", "20", "1", "Ashville", "4"];
+var correctAnswers = ["Gill", "No", "20", "1", "Ashville"];
 var userAnswers = document.getElementsByClassName("answers");
 var corrections = document.getElementsByClassName("corrections");
 var currentUserAnswer;
@@ -17,8 +17,8 @@ var gradeTest = function()
 		currentUserAnswer = currentUserAnswer.value.toLowerCase();
 		currentUserAnswer = currentUserAnswer.replace(/\s+/g, '');
 		
-		currentCorrectAnswer = userAnswers[i];
-		currentCorrectAnswer = currentCorrectAnswer.value.toLowerCase();
+		currentCorrectAnswer = correctAnswers[i];
+		currentCorrectAnswer = currentCorrectAnswer.toLowerCase();
 		currentCorrectAnswer = currentCorrectAnswer.replace(/\s+/g, '');
 		
 		if(currentUserAnswer === currentCorrectAnswer)
@@ -33,23 +33,6 @@ var gradeTest = function()
 		}
 		userAnswers[i].disabled = true;
 	}
-	
-	/*
-	//old for loop
-	for(var i = 1; i <= 5; i++)
-	{
-		userAnswerNumber = "q" + i + "answer";
-		correctAnswerNumber = "q" + i + "CorrectAnswer";
-		
-		console.log(userAnswerNumber);
-		console.log(correctAnswerNumber);
-		
-		if(document.getElementById(userAnswerNumber).value.toLowerCase() === correctAnswerNumber)
-		{
-			totalCorrect++;
-		}
-	}
-	*/
 	
 	//removes grade test button
 	document.getElementById("btnParent").removeChild(document.getElementById("btnGradeTest"));
