@@ -2534,5 +2534,8 @@
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-
+				
 	}
+#mainTitle {
+    text-shadow: 2px 2px #000000;
+}
