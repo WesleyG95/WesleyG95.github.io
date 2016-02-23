@@ -1949,6 +1949,11 @@
 			.item header h3 {
 				font-size: 1em;
 			}
+			
+				.item a {
+					width: 1880px;
+					height: 225px;
+				}
 
 /* Icons */
 
